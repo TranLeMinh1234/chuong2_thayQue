@@ -1,0 +1,10 @@
+{% extends "demo/baseDemo.html" %}
+{% block site_wrapper %}
+	<div id="app">
+		<div id="header">{% include 'demo/header.html' %}</div>
+		<div id="bodyPage">
+			<div id="navi">{% include 'demo/navi.html' %}</div>			
+			<div id="content">{% block content %}{% endblock %}</div>
+		</div>
+	</div>
+{% endblock%}

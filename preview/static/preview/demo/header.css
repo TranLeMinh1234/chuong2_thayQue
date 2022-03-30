@@ -1,0 +1,51 @@
+#header{
+	width: inherit;
+	height: 10%;
+	background-color: #fff;
+	box-shadow: 0px 0px 4px silver;
+	display: flex;
+	position: relative;
+	z-index: 20;
+}
+
+.logo{
+	color: #7367F0;
+	font-size: 20px;
+	width: 10%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-btn{
+	width: 40px;
+	height: 40px;
+	background-color: #7367F0;
+	color: white;
+	border-radius: 6px;
+	margin: auto 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.user-bar{
+	display: flex;
+	width: 2%;
+	justify-content: space-between;
+	align-items: center;
+	color: #678098;
+	margin-left: 80%;
+}
+
+.user-bar-item{
+	cursor: pointer;
+}
+
+.user-bar-item:hover{
+	color: #7367F0;
+	cursor: pointer;
+}

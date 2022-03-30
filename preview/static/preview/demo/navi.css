@@ -1,0 +1,33 @@
+#navi ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	position: relative;
+}
+
+.nav-item{
+	width: 100%;
+	height: 15%;
+	display: block;
+	border-bottom: 0.5px solid #edecec;
+	position: relative;
+}
+
+.nav-item a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #678098;
+	height: 100%;
+}
+
+.sub-home{
+	display: none;
+}
+
+.Home-menu:hover .sub-home{
+	display: block;
+}
