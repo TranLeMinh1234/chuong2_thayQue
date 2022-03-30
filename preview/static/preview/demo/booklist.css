@@ -1,0 +1,73 @@
+.book-list-background{
+	background-color: #F1F4F5;
+	flex: 1;
+	height: 100%;
+}
+
+.bar-list
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.search-frame{
+	position: relative;
+	width: 234px;
+}
+
+.search{
+	height: 10px;
+	width: 200px;
+	padding: 10px 20px 10px 10px;
+}
+
+.btn-search{
+	position: absolute;
+	right: -10px;
+	top: 0;
+	height: 100%;
+}
+
+
+.add-book{
+	outline: none;
+	border: 1px solid silver;
+	cursor: pointer;
+}
+.add-book:hover
+{
+	background-color: #7367F0;
+	color: white;
+}
+
+.list{
+	width: 97.8%;
+	margin: auto;
+	height: 85%;
+	background-color: #fff;
+}
+
+.list table{
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+table thead th{
+	border: 1px solid silver;
+	text-align: center;
+	height: 40px;
+}
+
+table tbody td{
+	border: 1px solid silver;
+	text-align: center;
+}
+
+table tbody tr{
+	height: 20px;
+}
+
+
