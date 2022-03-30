@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 from preview.views import home
+from preview.views import booklist
 
 from . import view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('catalog', home, name='Home'),
+    path('index', home, name='Home'),
+    path('book-list', booklist, name='Home'),
 ]
