@@ -7,9 +7,11 @@ body{
     
 }
 
+
 #app{
 	width: inherit;
 	height: inherit;
+	position: relative;
 }
 
 #bodyPage{

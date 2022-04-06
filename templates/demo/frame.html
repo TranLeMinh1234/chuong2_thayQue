@@ -1,6 +1,17 @@
 {% extends "demo/baseDemo.html" %}
 {% block site_wrapper %}
 	<div id="app">
+		<div id="bg-popup" 
+		style="position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #4a4a4a28;
+			z-index: 123;
+			display: none;
+			justify-content: center;
+			align-items: center;">
+		{% block popup %}{% endblock %}
+		</div> 
 		<div id="header">{% include 'demo/header.html' %}</div>
 		<div id="bodyPage">
 			<div id="navi">{% include 'demo/navi.html' %}</div>			
