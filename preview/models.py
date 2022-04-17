@@ -11,3 +11,14 @@ class Book(models.Model):
 
   def __unicode__(self):
     return self.content
+  
+class Shoes(models.Model):
+  name = models.CharField(max_length=224, null=False, blank=False)
+  description = models.TextField(max_length=254, null=False, blank=False)
+  price = models.FloatField(null=False)
+  size = models.CharField(max_length=20, null=False, blank=False)
+  image = models.ImageField()
+
+  def __unicode__(self):
+    return self.content
+ 

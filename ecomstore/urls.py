@@ -16,16 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from preview.views import (home,booklist,listBook,addBook,deleteBook,updateBook,getRecord)
+from preview.views import (home,booklist,list,add,delete,update,getRecord)
 
 from . import view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index', home, name='Home'),
-    path('book-list', listBook, name='listBook'),
-    path('addBook', addBook, name='addBook'),
-    path('deleteBook/<int:idRecord>', deleteBook, name='deleteBook'),
-    path('updateBook/<int:idRecord>', updateBook, name='updateBook'),
-    path('getRecord/<int:idRecord>', getRecord, name='getRecord'),
+    path('list/<str:productName>', list, name='list'),
+    path('add/<str:productName>', add, name='add'),
+    path('delete/<str:productName>/<int:idRecord>', delete, name='delete'),
+    path('update/<str:productName>/<int:idRecord>', update, name='update'),
+    path('getRecord/<str:productName>/<int:idRecord>', getRecord, name='getRecord'),
 ]
